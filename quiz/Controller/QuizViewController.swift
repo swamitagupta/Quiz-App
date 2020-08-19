@@ -15,10 +15,9 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     
-    let quiz = [Questions(question: "One", options: ["True", "False"], answer: "True"), Questions(question: "Two", options: ["True", "False"], answer: "True"),
-    Questions(question: "Three", options: ["True", "False"], answer: "False")]
+    var quizBrain = QuizBrain()
     
-    var questionNumber = 0
+    
     var score = 0
     
     override func viewDidLoad() {
