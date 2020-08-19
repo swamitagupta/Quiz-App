@@ -16,4 +16,28 @@ struct QuizBrain {
     Questions(question: "Three", options: ["True", "False"], answer: "False")]
     
     var questionNumber = 0
+    
+    func checkAnswer(_ userAnswer: String) -> Bool {
+        if userAnswer == quiz[questionNumber].answer {
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    
+    func getQuestion() -> String{
+        return quiz[questionNumber].question
+    }
+    
+    func getProgress() -> Float{
+        return Float(questionNumber+1)/Float(quiz.count)
+    }
+    
+    mutating func nextQuestion() {
+        if questionNumber + 1 < quiz.count {
+            questionNumber += 1
+            
+        }
+    }
 }
