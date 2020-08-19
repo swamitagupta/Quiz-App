@@ -17,7 +17,7 @@
 		7025EAD624CBFAB8004EF42E /* quizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7025EAD524CBFAB8004EF42E /* quizTests.swift */; };
 		7025EAE124CBFAB8004EF42E /* quizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7025EAE024CBFAB8004EF42E /* quizUITests.swift */; };
 		70B68ECA24ED233F006180A8 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B68EC924ED233F006180A8 /* Questions.swift */; };
-		70B68ED024ED3894006180A8 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B68ECF24ED3894006180A8 /* QuizBrain.swift */; };
+		70B68ED224ED3C15006180A8 /* QuizHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B68ED124ED3C15006180A8 /* QuizHub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		7025EAE024CBFAB8004EF42E /* quizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizUITests.swift; sourceTree = "<group>"; };
 		7025EAE224CBFAB8004EF42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B68EC924ED233F006180A8 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
-		70B68ECF24ED3894006180A8 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		70B68ED124ED3C15006180A8 /* QuizHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				70B68EC924ED233F006180A8 /* Questions.swift */,
-				70B68ECF24ED3894006180A8 /* QuizBrain.swift */,
+				70B68ED124ED3C15006180A8 /* QuizHub.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,8 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7025EAC024CBFAB5004EF42E /* QuizViewController.swift in Sources */,
-				70B68ED024ED3894006180A8 /* QuizBrain.swift in Sources */,
 				7025EABC24CBFAB5004EF42E /* AppDelegate.swift in Sources */,
+				70B68ED224ED3C15006180A8 /* QuizHub.swift in Sources */,
 				7025EAC624CBFAB5004EF42E /* quiz.xcdatamodeld in Sources */,
 				70B68ECA24ED233F006180A8 /* Questions.swift in Sources */,
 				7025EABE24CBFAB5004EF42E /* SceneDelegate.swift in Sources */,
