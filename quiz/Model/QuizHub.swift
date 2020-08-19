@@ -42,6 +42,7 @@ struct QuizBrain {
     
     func getOptions() -> [String]{
         return quiz[questionNumber].options
+        
     }
     
     func getProgress() -> Float{

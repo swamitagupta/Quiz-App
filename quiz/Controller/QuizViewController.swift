@@ -45,10 +45,10 @@ class QuizViewController: UIViewController {
     
     @objc func updateUI() {
         questionText.text = quizBrain.getQuestion()
-        optionOne.titleLabel?.text = quizBrain.getOptions()[0]
-        optionTwo.titleLabel?.text = quizBrain.getOptions()[1]
-        optionThree.titleLabel?.text = quizBrain.getOptions()[2]
-        optionFour.titleLabel?.text = quizBrain.getOptions()[3]
+        optionOne.setTitle( "\(quizBrain.getOptions()[0])" , for: .normal )
+        optionTwo.setTitle( "\(quizBrain.getOptions()[1])" , for: .normal )
+        optionThree.setTitle( "\(quizBrain.getOptions()[2])" , for: .normal )
+        optionFour.setTitle( "\(quizBrain.getOptions()[3])" , for: .normal )
         
         optionOne.backgroundColor = UIColor.white
         optionTwo.backgroundColor = UIColor.white

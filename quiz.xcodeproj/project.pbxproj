@@ -18,6 +18,7 @@
 		7025EAE124CBFAB8004EF42E /* quizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7025EAE024CBFAB8004EF42E /* quizUITests.swift */; };
 		70B68ECA24ED233F006180A8 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B68EC924ED233F006180A8 /* Questions.swift */; };
 		70B68ED224ED3C15006180A8 /* QuizHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B68ED124ED3C15006180A8 /* QuizHub.swift */; };
+		70B68ED424ED68DB006180A8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B68ED324ED68DB006180A8 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		7025EAE224CBFAB8004EF42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B68EC924ED233F006180A8 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		70B68ED124ED3C15006180A8 /* QuizHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHub.swift; sourceTree = "<group>"; };
+		70B68ED324ED68DB006180A8 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				7025EABF24CBFAB5004EF42E /* QuizViewController.swift */,
+				70B68ED324ED68DB006180A8 /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			files = (
 				7025EAC024CBFAB5004EF42E /* QuizViewController.swift in Sources */,
 				7025EABC24CBFAB5004EF42E /* AppDelegate.swift in Sources */,
+				70B68ED424ED68DB006180A8 /* ResultViewController.swift in Sources */,
 				70B68ED224ED3C15006180A8 /* QuizHub.swift in Sources */,
 				7025EAC624CBFAB5004EF42E /* quiz.xcdatamodeld in Sources */,
 				70B68ECA24ED233F006180A8 /* Questions.swift in Sources */,
