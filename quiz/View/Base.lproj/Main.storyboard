@@ -55,6 +55,13 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ng8-sp-MQR">
                                 <rect key="frame" x="50" y="677" width="314" height="2.5"/>
                             </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkv-vW-YoJ">
+                                <rect key="frame" x="322" y="113" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.5493035383" green="0.98039215690000003" blue="0.9409287878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -78,6 +85,7 @@
                         <outlet property="falseButton" destination="qf7-JN-ywn" id="nmq-gK-qi9"/>
                         <outlet property="progressBar" destination="ng8-sp-MQR" id="qds-VE-2lG"/>
                         <outlet property="questionText" destination="Jai-Rf-oua" id="o7A-zs-KWH"/>
+                        <outlet property="scoreLabel" destination="wkv-vW-YoJ" id="6xO-EG-e7q"/>
                         <outlet property="trueButton" destination="MXs-jj-N0C" id="pjY-mg-Zsy"/>
                     </connections>
                 </viewController>

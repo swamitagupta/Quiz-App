@@ -11,14 +11,12 @@ import UIKit
 class QuizViewController: UIViewController {
     
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionText: UILabel!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     
     var quizBrain = QuizBrain()
-    
-    
-    var score = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,14 +28,14 @@ class QuizViewController: UIViewController {
         let correct = quizBrain.checkAnswer(sender.currentTitle!)
         
         if correct {
-            score = score + 1
+            
             sender.backgroundColor = UIColor.green
         }
         else {
             sender.backgroundColor = UIColor.red
         }
         
-        nextQuestion()
+        quizBrain.nextQuestion()
         
         Timer.scheduledTimer(timeInterval: 0.2, target:self, selector:#selector(updateUI), userInfo:nil, repeats: false)
         
@@ -48,6 +46,7 @@ class QuizViewController: UIViewController {
         trueButton.backgroundColor = UIColor.white
         falseButton.backgroundColor = UIColor.white
         progressBar.progress = quizBrain.getProgress()
+        scoreLabel.text = "Score: \(quizBrain.updateScore())/\(quizBrain.quiz.count)"
     }
     
 }
