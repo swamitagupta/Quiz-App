@@ -52,18 +52,20 @@
                                     <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uh0-4w-1xb"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ng8-sp-MQR">
-                                <rect key="frame" x="128" y="765" width="202" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ng8-sp-MQR">
+                                <rect key="frame" x="50" y="677" width="314" height="2.5"/>
                             </progressView>
                         </subviews>
                         <color key="backgroundColor" red="0.5493035383" green="0.98039215690000003" blue="0.9409287878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ng8-sp-MQR" firstAttribute="width" secondItem="qf7-JN-ywn" secondAttribute="width" id="1Kw-ue-33d"/>
                             <constraint firstItem="qf7-JN-ywn" firstAttribute="width" secondItem="MXs-jj-N0C" secondAttribute="width" id="3Pt-c7-NO3"/>
                             <constraint firstItem="qf7-JN-ywn" firstAttribute="height" secondItem="MXs-jj-N0C" secondAttribute="height" id="3le-cJ-ibj"/>
+                            <constraint firstItem="ng8-sp-MQR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6uN-mB-Gr6"/>
                             <constraint firstItem="Jai-Rf-oua" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="BGt-3f-LWy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jai-Rf-oua" secondAttribute="trailing" constant="50" id="Cun-ys-a9E"/>
                             <constraint firstItem="qf7-JN-ywn" firstAttribute="top" secondItem="MXs-jj-N0C" secondAttribute="bottom" constant="15" id="WGo-g0-cCW"/>
+                            <constraint firstItem="ng8-sp-MQR" firstAttribute="top" secondItem="qf7-JN-ywn" secondAttribute="bottom" constant="50" id="X19-js-qDQ"/>
                             <constraint firstItem="MXs-jj-N0C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hO7-nv-jfz"/>
                             <constraint firstItem="qf7-JN-ywn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lmZ-ko-szZ"/>
                             <constraint firstItem="Jai-Rf-oua" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="u04-y6-u1B"/>

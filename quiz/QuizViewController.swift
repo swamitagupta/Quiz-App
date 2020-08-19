@@ -9,6 +9,7 @@
 import UIKit
 
 class QuizViewController: UIViewController {
+    
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var questionText: UILabel!
     @IBOutlet weak var trueButton: UIButton!
@@ -26,24 +27,31 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func answerPressed(_ sender: Any) {
-        let userAnswer = (sender as AnyObject).currentTitle
+    @IBAction func answerPressed(_ sender: UIButton) {
+        let userAnswer = sender.currentTitle
         let actualAnswer = quiz[questionNumber].answer
         
         if userAnswer == actualAnswer {
             score = score + 1
+            sender.backgroundColor = UIColor.green
+        }
+        else {
+            sender.backgroundColor = UIColor.red
         }
         
         if questionNumber + 1 < quiz.count {
             questionNumber += 1
             
         }
-        updateUI()
+        Timer.scheduledTimer(timeInterval: 0.2, target:self, selector:#selector(updateUI), userInfo:nil, repeats: false)
         
     }
     
-    func updateUI() {
+    @objc func updateUI() {
         questionText.text = quiz[questionNumber].question
+        trueButton.backgroundColor = UIColor.white
+        falseButton.backgroundColor = UIColor.white
+        progressBar.progress = Float(questionNumber+1)/Float(quiz.count)
     }
     
 }
